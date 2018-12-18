@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="personId" class="in.com.prestige.colletionwithwiring.PersonDTO"
+		autowire="byType">
+	</bean>
+	<bean id="customerId" class="in.com.prestige.colletionwithwiring.CustomerDTO">
+		<property name="map">
+			<map>
+				<entry key="Firstname" value="Deependra"></entry>
+				<entry key="LastName" value="chaudhari"></entry>
+				<entry key="Address" value-ref="address1"></entry>
+			</map>
+		</property>
+	</bean>
+	<bean id="address1" class="in.com.prestige.colletionwithwiring.Address">
+		<property name="city" value="Indore"></property>
+		<property name="state" value="MP"></property>
+		<property name="zipcode" value="452001"></property>
+
+	</bean>
+</beans>  

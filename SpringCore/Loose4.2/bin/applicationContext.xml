@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="OutputHelper" class="in.com.prestige.dto.OutPutHelper">
+		<property name="iOutput" ref="CSVOutputGenerator"></property>
+		<property name="csvOutput" ref="CSVOutputGenerator"></property>
+		<property name="jsonOutput" ref="JSONOutputGenerator"></property>
+	</bean>
+	<bean id="OutputHelper2" class="in.com.prestige.dto.OutPutHelper">
+		<property name="iOutput" ref="JSONOutputGenerator"></property>
+
+	</bean>
+	<bean id="CSVOutputGenerator" class="in.com.prestige.dto.CSVOutputGenerator">
+		<property name="csvFileId" value="101"></property>
+		<property name="csvFileName" value="StudentRecords.csv"></property>
+	</bean>
+	<bean id="JSONOutputGenerator" class="in.com.prestige.dto.JSonOutputGenerator">
+		<property name="jsonId" value="103"></property>
+		<property name="JsonFileName" value="StudentRecords.json"></property>
+	</bean>
+
+</beans>  

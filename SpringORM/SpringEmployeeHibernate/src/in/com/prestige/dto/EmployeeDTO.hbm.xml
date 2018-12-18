@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 9, 2018 9:33:56 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="in.com.prestige.dto.EmployeeDTO" table="EMPLOYEE_DTO">
+        <id name="empID" type="java.lang.Integer">
+            <column name="EMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="empName" type="java.lang.String">
+            <column name="EMPNAME" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+    </class>
+</hibernate-mapping>

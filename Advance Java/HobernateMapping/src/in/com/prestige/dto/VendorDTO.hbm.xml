@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="in.com.prestige.dto">
+	<class name="VendorDTO" table="vendor_customer">
+		<id name="vendorID" column="VENDORID"></id>
+		<property name="vendorName" column="VENDOR_NAME" />
+
+		<set name="children" cascade="all">
+			<key column="FOR_VENDOR_ID" />
+			<one-to-many class="CustomerDTO" />
+		</set>
+	</class>
+</hibernate-mapping>

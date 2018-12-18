@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="in.com.prestige.dto">
+<class name="CustomerDTO" table="customers">
+ <id name="customersID" column="CUSTOMERS_ID"> <generator class="increment"/></id>
+ <property name="name" column="NAME"/>
+ <property name="email" column="EMAIL"/>
+ <property name="password" column="PASSWORD"/>
+ <property name="contactno" column="CONTACT_NO"/>
+</class>
+</hibernate-mapping>

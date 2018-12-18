@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	 
+	 <bean id = "categoryId" class="in.com.prestige.bynamewiring.CategoryDTO" autowire="byName">
+	     <property name="categoryName" value="Comics"></property>
+	     <!-- <property name="book" ref = "bookId"></property> this is removed and creating reference using autowire byName -->
+	 </bean>
+	 <bean id="book" class="in.com.prestige.bynamewiring.BookDTO">
+	 <!-- Here byName Search reference by id which is same as  reference in catgeoryDTO class -->
+	     <property name="bookID" value="101"></property>
+	     <property name="bookName" value="Malgudi"></property>
+	     <property name="author" value="Premchand"></property>
+	 </bean>
+	 
+	 <bean id="book1" class="in.com.prestige.bynamewiring.BookDTO">
+	 <!-- Here byName Search reference by id which is same as  reference in catgeoryDTO class -->
+	     <property name="bookID" value="101"></property>
+	     <property name="bookName" value="Malgudi"></property>
+	     <property name="author" value="Premchand"></property>
+	 </bean>
+
+</beans>  

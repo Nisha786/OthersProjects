@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Lombok/lombok.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/com.springsource.org.apache.log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/hibernate-commons-annotations-3.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/hibernate-core-3.6.7.Final.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/javassist.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/jms-1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/jmxtools-1.2.1.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/jsr250-api-1.0.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/mysql-connector-java-5.1.45-bin.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.springframework.asm-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.springframework.context-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.springframework.orm-3.1.2.release.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/spring-dao-2.0.6.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.apache.commons.pool.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.springframework.jdbc-3.0.2.release.jar"/>
+	<classpathentry kind="lib" path="F:/Prestige Java/AdnavceFiles/Spring Jars/SpringORM/org.springframework.transaction-3.1.0.release.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

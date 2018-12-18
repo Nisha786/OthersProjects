@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="categoryId" class="in.com.prestige.bytypewiring.CategoryDTO"
+		autowire="byType">
+		<property name="categoryName" value="Comics"></property>
+	</bean>
+	<bean id="bookid" class="in.com.prestige.bytypewiring.BookDTO">
+		<!-- Here byType Search Class in Package not checking for BookDTO reference -->
+		<property name="bookID" value="101"></property>
+		<property name="bookName" value="Malgudi"></property>
+		<property name="author" value="Premchand"></property>
+	</bean>
+
+	
+
+</beans>  

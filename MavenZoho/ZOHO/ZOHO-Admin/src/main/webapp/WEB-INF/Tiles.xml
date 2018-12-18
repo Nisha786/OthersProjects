@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- Senario First -->
+	<definition name="baseTemplate" id="baseTemplate"
+		template="/WEB-INF/layout/baseLayout.jsp">
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"></put-attribute>
+		<put-attribute name="body" value="${body}"></put-attribute>
+	</definition>
+
+	<definition name="login" id="login" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp"></put-attribute>
+	</definition>
+
+	<definition name="signUp" id="signUp" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/signUp.jsp"></put-attribute>
+	</definition>
+
+	<definition name="success" id="success" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/success.jsp"></put-attribute>
+	</definition>
+
+	<definition name="product" id="product" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/product.jsp"></put-attribute>
+	</definition>
+
+
+	<!-- Senario Second -->
+	<!-- <definition name="Senario2Template" id="Senario2Template" template="/WEB-INF/layout/baseLayout2.jsp"> 
+		<put-attribute name="body" value="${body}"></put-attribute> <put-attribute 
+		name="footer" value="/WEB-INF/layout/footer.jsp"></put-attribute> </definition> -->
+
+	<!-- Senario Third -->
+	<!-- <definition name="dashboard" id="dashboard" value="/WEB-INF/layout/dashBoard.jsp"></definition> -->
+</tiles-definitions>

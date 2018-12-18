@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="topicHelper" class="in.com.prestige.parentchild.TopicHelper" autowire ="byName">
+	</bean>
+	<bean id="subjetcParent" class="in.com.prestige.parentchild.Subject">
+	 <property name="subjectName" value="Programming Launguage"></property>
+	</bean>
+	<bean id="topic1" class="in.com.prestige.parentchild.Topic1" parent="subjetcParent">
+	  <property name="topicName" value="Java"></property>
+	</bean>
+	<bean id="topic2" class="in.com.prestige.parentchild.Topic2" parent="subjetcParent">
+	  <property name="topicName" value="PHP"></property>
+	</bean>
+	<bean id="topicInner" class="in.com.prestige.parentchild.Topic1$InnerTest">
+	  <property name="innerName" value="colletion"></property>
+	</bean>
+
+</beans>  

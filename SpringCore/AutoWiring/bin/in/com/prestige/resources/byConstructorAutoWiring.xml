@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	 
+	 <bean id = "categoryId" class="in.com.prestige.byConstructorwiring.CategoryDTO" autowire="constructor">
+	    <!--  <property name="categoryName" value="Comics"></property> -->
+	     <constructor-arg index="0" value="Comics"></constructor-arg>
+	 </bean>
+	 <bean id="book" class="in.com.prestige.byConstructorwiring.BookDTO">
+	     <property name="bookID" value="101"></property>
+	     <property name="bookName" value="Malgudi"></property>
+	     <property name="author" value="Premchand"></property>
+	 </bean>
+</beans>  

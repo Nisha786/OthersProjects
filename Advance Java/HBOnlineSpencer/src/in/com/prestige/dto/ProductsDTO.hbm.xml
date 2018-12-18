@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="in.com.prestige.dto">
+<class name="ProductsDTO" table="products">
+ <id name="productID" column="PRODUCT_ID"> <generator class="increment"/></id>
+ <property name="productname" column="PRODUCT_NAME"/>
+ <property name="status" column="STATUS"/>
+ <property name="price" column="PRICE"/>
+ <property name="category" column="CATEGORY"/>
+ <property name="numberofproducts" column="NUMBER_OF_PRODUCTS"/>
+ <property name="filename" column="FILE_NAME"/>
+ <property name="path" column="PATH"/>
+</class>
+</hibernate-mapping>

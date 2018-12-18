@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center" >
+    <table border="2">
+       <form action="ProductCtl" method="get" onsubmit="return validation()">
+           <tr>
+             <td>Product Name</td>
+             <td><input type="text" name = "pname" id = "pname"></td>
+             <td id = "pnameerror"></td>
+             
+           </tr>
+           <tr>
+             <td>Product Price</td>
+             <td><input type="text" name = "price" id ="price"></td>
+           </tr>
+            
+             <td>Status</td>
+             <td><input type="text" name = "status" value = "Available"></td>
+           </tr>
+           <tr >
+             <td colspan="2"><input type="submit" value = "Submit"></td>
+           </tr>
+       </form>
+    </table>
+     <a href="SpencerHome.html">Home Page</a>
+    </div>
+    <script type="text/javascript">
+        function validation() {
+			var productname = document.getElementById('pname').value;
+			if(productname == ""){
+				document.getElementById('pnameerror').innerHTML = "  **Please fill value";
+				return false;
+			}else if(!isNan(productname)){
+				document.getElementById('pnameerror').innerHTML = "  **Only Characters are allowed";
+				return false;
+			}else{
+				document.getElementById('pnameerror').innerHTML = "";
+				return true;
+			}
+			
+		}
+    </script>
+</body>
+</html>

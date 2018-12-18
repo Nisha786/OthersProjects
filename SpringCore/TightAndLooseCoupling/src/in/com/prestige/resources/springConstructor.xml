@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="textEditor" class="in.com.prestige.contructor.TextEditor">
+	<constructor-arg ref="spellChecker"></constructor-arg>
+	<constructor-arg index="1" value="Rahul" type="java.lang.String"></constructor-arg>
+	</bean>
+	<bean id="spellChecker" class="in.com.prestige.contructor.SpellChecker">
+	<constructor-arg index="0" value="Deependra" type="java.lang.String"></constructor-arg>
+	<constructor-arg index="1" value="Indore" type="java.lang.String"></constructor-arg>
+	<constructor-arg index="2" value="20" type="java.lang.Integer"></constructor-arg>
+	</bean>
+
+</beans>  
